@@ -1,4 +1,4 @@
-- name: "{{ component }}" 
+- name: "configure {{ component }}" 
   hosts: localhost
   become: true
   connection: local
