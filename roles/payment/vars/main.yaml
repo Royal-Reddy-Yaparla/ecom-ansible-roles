@@ -1,5 +1,5 @@
-CART_HOST: cart.royalreddy.site
-USER_HOST: user.royalreddy.site
-RABBITMQ_HOST: rabbitmq.royalreddy.site
+CART_HOST: cart-{{ env }}.royalreddy.site
+USER_HOST: user-{{ env }}.royalreddy.site
+RABBITMQ_HOST: rabbitmq-{{ env }}.royalreddy.site
 AMQP_USER: roboshop
 AMQP_PASS: roboshop123

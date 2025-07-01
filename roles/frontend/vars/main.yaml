@@ -1,5 +1,5 @@
-CATALOGUE_HOST: catalogue.royalreddy.site
-USER_HOST: user.royalreddy.site
-CART_HOST: cart.royalreddy.site
-SHIPPING_HOST: shipping.royalreddy.site
-PAYMENT_HOST: payment.royalreddy.site
+CATALOGUE_HOST: catalogue-{{ env }}.royalreddy.site
+USER_HOST: user-{{ env }}.royalreddy.site
+CART_HOST: cart-{{ env }}.royalreddy.site
+SHIPPING_HOST: shipping-{{ env }}.royalreddy.site
+PAYMENT_HOST: payment-{{ env }}.royalreddy.site
