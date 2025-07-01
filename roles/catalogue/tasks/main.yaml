@@ -36,12 +36,12 @@
       name: common
       tasks_from: systemd-service.yaml
 
-# deployment with tags
-  - name: deployment catalogue service
-    tags: 
-    - deployment
-    import_role:
-      name: common
-      tasks_from: deployment.yaml
+# # deployment with tags
+#   - name: deployment catalogue service
+#     tags: 
+#     - deployment
+#     import_role:
+#       name: common
+#       tasks_from: deployment.yaml
     
   
