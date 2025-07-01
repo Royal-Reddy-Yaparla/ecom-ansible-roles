@@ -8,24 +8,27 @@
     name: mysqld
     state: started
     enabled: true
+    
+- name: set up root root_password
+  ansible.builtin.command: "mysql_secure_installation --set-root-pass RoboShop@1"
 
-- name: install python3 
-  ansible.builtin.package:
-    name: "{{ item }}"
-    state: present
-  loop:
-    - python3
-    - gcc
-    - python3-devel
-    - python3-pip
+# - name: install python3 
+#   ansible.builtin.package:
+#     name: "{{ item }}"
+#     state: present
+#   loop:
+#     - python3
+#     - gcc
+#     - python3-devel
+#     - python3-pip
 
-- name: install boto3 and botocore
-  ansible.builtin.pip:
-    name: "{{ item }}"
-    executable: pip3
-  loop:
-  - boto3
-  - botocore
+# - name: install boto3 and botocore
+#   ansible.builtin.pip:
+#     name: "{{ item }}"
+#     executable: pip3
+#   loop:
+#   - boto3
+#   - botocore
   
-- name: setp root password
-  ansible.builtin.command: mysql_secure_installation --set-root-pass {{ MYSQL_ROOT_PASSWORD }} # RoboShop@1
+# - name: setp root password
+#   ansible.builtin.command: mysql_secure_installation --set-root-pass {{ MYSQL_ROOT_PASSWORD }} # RoboShop@1
