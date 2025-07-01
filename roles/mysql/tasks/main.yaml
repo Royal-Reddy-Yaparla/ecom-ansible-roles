@@ -1,4 +1,4 @@
-- name: install redis 
+- name: install mysql 
   include_role:
     name: common
     tasks_from: mysql-setup.yaml
@@ -8,6 +8,16 @@
     name: mysqld
     state: started
     enabled: true
+
+- name: install python3 
+  ansible.builtin.package:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - python3
+    - gcc
+    - python3-devel
+
 - name: install boto3 and botocore
   ansible.builtin.pip:
     name: "{{ item }}"
