@@ -1,2 +1,2 @@
 REDIS_HOST: redis-{{ env }}.royalreddy.site
-CATALOGUE_HOST: catalogue-{{ env }}.royalreddy.site
+CATALOGUE_HOST: catalogue.backend-{{ env }}.royalreddy.site
