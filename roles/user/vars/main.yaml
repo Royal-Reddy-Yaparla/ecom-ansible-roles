@@ -1,2 +1,2 @@
-REDIS_HOST: redis.royalreddy.site
-MONGODB_HOST: mongodb.royalreddy.site
+REDIS_HOST: redis-{{ env }}.royalreddy.site
+MONGODB_HOST: mongodb-{{ env }}.royalreddy.site

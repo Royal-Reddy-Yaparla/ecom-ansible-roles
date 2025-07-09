@@ -1,4 +1,4 @@
 MYSQL_HOST: mysql-{{ env }}.royalreddy.site
-CART_HOST: cart-{{ env }}.royalreddy.site
+CART_HOST: cart.backend-{{ env }}.royalreddy.site
 MYSQL_USERNAME: root 
 MYSQL_PASSWORD: RoboShop@1
